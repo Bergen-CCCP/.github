@@ -17,6 +17,12 @@ So, the plan is to merge these two things together and create a cat robot, progr
 The code for the robot will live in the [`Cute Cat`](https://github.com/Bergen-CCCP/Cute-Cat) repository. The other repositories are libraries.
 Given that we have only just began, we have published nothing on hackage, but the `Cute Cat` project should automatically clone what you need when you build it with cabal.
 
+### Things to note 🧙
+Although none of the repositories have been set up like this yet, we will most probably use [The open build service](https://build.opensuse.org)
+to target raspbian (Bookworm). This means that after some time, we will probably want to target GHC 9.0. It's probably fine to use
+libraries that are not packaged in debian (we can just package what we are missing), but it will not be fine to use GHC language extentions
+that are newer.
+
 <!--
 
 **Here are some ideas to get you started:**
